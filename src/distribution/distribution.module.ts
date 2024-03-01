@@ -7,10 +7,10 @@ import { AuthController } from './rest-api/auth.controller';
 import { APP_GUARD } from '@nestjs/core';
 import { BusinessModule } from 'src/business/business.module';
 import { HealthCheckController } from './rest-api/healthcheck.controller';
-import { ClinicController } from './rest-api/clinic.controller';
+import { ClincController } from './rest-api/clinc.controller';
 
 @Module({
-  controllers: [HealthCheckController, UsersController, AuthController, ClinicController],
+  controllers: [HealthCheckController, UsersController, AuthController, ClincController],
   imports: [BusinessModule, PassportModule],
   providers: [
     JwtStrategy,
